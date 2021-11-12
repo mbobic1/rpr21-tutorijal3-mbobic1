@@ -4,10 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Set;
 
-import static ba.unsa.etf.rpr.tutorijal_3.FiksniBroj.Grad.*;
+
+import static ba.unsa.etf.rpr.tutorijal_3.FiksniBroj.Grad.SARAJEVO;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ImenikTest {
+
 
     @Test
     void dodaj() {
@@ -17,6 +19,8 @@ public class ImenikTest {
         imenik.dodaj("Meho Mehic", new FiksniBroj(SARAJEVO, "123-456"));
         assertEquals("033/123-456", imenik.dajBroj("Meho Mehic"));
     }
+
+
 
     @Test
     void naSlovo() {
